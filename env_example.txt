@@ -1,0 +1,17 @@
+# Ссылка на базу (Supabase Transaction Pooler)
+# Обязательно: postgresql+asyncpg:// и в конце &prepared_statement_cache_size=0
+DATABASE_URL=postgresql+asyncpg://postgres.ТВОЙ_ЮЗЕР:[ТВОЙ_ПАРОЛЬ]@aws-0-eu-central-1.pooler.supabase.com:6543/postgres?ssl=require&prepared_statement_cache_size=0
+
+# Настройки безопасности
+SECRET_KEY=super_secret_key_activityhub_2025
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# Настройки почты (Gmail App Password)
+MAIL_USERNAME=твой_email@gmail.com
+MAIL_PASSWORD=твой_16_значный_пароль_приложения
+
+# Твой адрес (для генерации ссылок). 
+# Если локально: http://127.0.0.1:8000
+# Если через Ngrok: https://xxxx-xxxx.ngrok-free.app (без слеша в конце)
+DOMAIN=http://127.0.0.1:8000
